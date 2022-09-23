@@ -90,3 +90,16 @@
 1	22	1663889977000950624	CMakeFiles/network_namespaces.dir/applications/application.c.o	d4db64f22cc3dcf0
 1	22	1663889977000950624	CMakeFiles/network_namespaces.dir/applications/main_application.c.o	9a9fdbf014a9539
 23	37	1663889977016950793	network_namespaces	c6fa67947e1e0c7
+0	39	1663955337690253370	CMakeFiles/network_namespaces.dir/scripts/enable_lo/enable_lo.c.o	4ff60d2c81009932
+0	39	1663955337690253370	CMakeFiles/network_namespaces.dir/scripts/create_veth/create_veth.c.o	28791dc8a80a4b76
+0	40	1663955337690253370	CMakeFiles/network_namespaces.dir/scripts/create_namespace/create_namespace.c.o	354dcd2d77c8c84c
+1	40	1663955337690253370	CMakeFiles/network_namespaces.dir/scripts/enable_veth/enable_veth.c.o	d92448459eae4309
+1	40	1663955337690253370	CMakeFiles/network_namespaces.dir/scripts/link_veth/link_veth.c.o	d64b8ace989d3c69
+1	40	1663955337690253370	CMakeFiles/network_namespaces.dir/scripts/assign_ip/assign_ip.c.o	5f69e1445b0824a0
+1	40	1663955337690253370	CMakeFiles/network_namespaces.dir/scripts/unshare/unshare.c.o	7539bfeba3b4553f
+1	40	1663955337690253370	CMakeFiles/network_namespaces.dir/scripts/set_namespace/set_namespace.c.o	b1710812b1c40fd4
+40	58	1663955337706253526	network_namespaces	c6fa67947e1e0c7
+1	16	1663956825424690976	CMakeFiles/network_namespaces.dir/scripts/create_veth/create_veth.c.o	28791dc8a80a4b76
+1	22	1663956825432691054	CMakeFiles/network_namespaces.dir/applications/main_application.c.o	9a9fdbf014a9539
+1	22	1663956825432691054	CMakeFiles/network_namespaces.dir/applications/application.c.o	d4db64f22cc3dcf0
+22	35	1663956825444691170	network_namespaces	c6fa67947e1e0c7

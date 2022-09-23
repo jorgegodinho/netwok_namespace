@@ -23,6 +23,7 @@ void isolate(char *child_namespace_name) {
 
 void run_application_in_thread(char *child_namespace_name) {
     int server_sock;
+    printf("hello\n");
     isolate(child_namespace_name);
 
     server_sock = create_server(PORT);

@@ -7,7 +7,6 @@
 #include "set_namespace.h"
 
 void set_namespace(char *child_namespace_name) {
-    printf("set namespace\n");
     int namespace;
     char path[PATH_MAX];
     snprintf(path, sizeof(path), "/var/run/netns/%s", child_namespace_name);

@@ -8,7 +8,6 @@ static const char CHILD_ENABLE_VETH[] = "ip -n %s link set %s up";
 static const char PARENT_ENABLE_VETH[] = "ip link set %s up";
 
 void child_enable_veth(char *child_namespace_name, char *child_veth_name) {
-    printf("enable veth\n");
     char command[256];
     if (sprintf(command, CHILD_ENABLE_VETH, child_namespace_name, child_veth_name) < 0) {
         printf("Error formatting child_enable_veth command\n");
