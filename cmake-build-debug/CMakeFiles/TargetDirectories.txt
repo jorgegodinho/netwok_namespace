@@ -1,0 +1,3 @@
+/home/jgodinho/CLionProjects/network_namespaces/cmake-build-debug/CMakeFiles/network_namespaces.dir
+/home/jgodinho/CLionProjects/network_namespaces/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/jgodinho/CLionProjects/network_namespaces/cmake-build-debug/CMakeFiles/rebuild_cache.dir

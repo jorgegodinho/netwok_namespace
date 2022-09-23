@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.22)
+project(network_namespaces C)
+
+set(CMAKE_C_STANDARD 99)
+
+add_executable(network_namespaces main.c threads/threads.c threads/threads.h server/server.c server/server.h socket/socket.c socket/socket.h scripts/create_namespace/create_namespace.c scripts/create_namespace/create_namespace.h scripts/enable_lo/enable_lo.c scripts/enable_lo/enable_lo.h scripts/create_veth/create_veth.c scripts/create_veth/create_veth.h scripts/link_veth/link_veth.c scripts/link_veth/link_veth.h scripts/assign_ip/assign_ip.c scripts/assign_ip/assign_ip.h scripts/enable_veth/enable_veth.c scripts/enable_veth/enable_veth.h scripts/unshare/unshare.c scripts/unshare/unshare.h scripts/set_namespace/set_namespace.c scripts/set_namespace/set_namespace.h applications/main_application.c applications/main_application.h applications/application.c applications/application.h client/client.c client/client.h)
