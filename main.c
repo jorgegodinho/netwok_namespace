@@ -1,6 +1,6 @@
 #include "applications/entrypoint.h"
 
 int main() {
-    run_primary_application();
+    run_entrypoint();
     return 0;
 }

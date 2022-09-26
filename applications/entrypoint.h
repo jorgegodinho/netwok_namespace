@@ -7,6 +7,6 @@
 
 #include "container.h"
 
-void run_primary_application();
+void run_entrypoint();
 
 #endif //NETWORK_NAMESPACES_ENTRYPOINT_H

@@ -12,6 +12,7 @@ void link_veth(char *container_veth_name, char *container_namespace_name) {
         printf("Error formatting link_veth command\n");
         exit(0);
     }
+    printf("cmd: %s\n", command);
     if (system(command) == -1) {
         printf("Error while running link_veth command\n");
         exit(0);

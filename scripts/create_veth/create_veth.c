@@ -12,6 +12,7 @@ void create_veth(char *entrypoint_veth_name, char *container_veth_name) {
         printf("Error formatting create_veth command\n");
         exit(0);
     }
+    printf("cmd: %s\n", command);
     if (system(command) == -1) {
         printf("Error while running create_veth command\n");
         exit(0);

@@ -4,25 +4,40 @@
 
 #include "entrypoint.h"
 
-static const char IP_FORMAT[] = "10.10.0.%d/16";
+static const char IP_FORMAT[] = "10.%d.%d.%d/30";
 static const char CONTAINER_NAMESPACE_FORMAT[] = "containerns%d";
 static const char ENTRYPOINT_VETH_FORMAT[] = "entrypointveth%d";
 static const char CONTAINER_VETH_FORMAT[] = "containerveth%d";
-static int ip_count = 1;
+static int ip_count_4 = 0;
+static int ip_count_3 = 0;
+static int ip_count_2 = 0;
 static int container_namespace_count = 0;
 static int entrypoint_veth_count = 0;
 static int container_veth_count = 0;
 
-void create_new_application() {
+void increment_ips() {
+    if (ip_count_4 == 255) {
+        if (ip_count_3 == 255) {
+            ip_count_2++;
+        } else {
+            ip_count_3++;
+        }
+    } else {
+        ip_count_4++;
+    }
+}
+
+void create_new_container() {
     char entrypoint_ip[256], container_ip[256], container_namespace_name[256], entrypoint_veth_name[256], container_veth_name[256];
-    if (sprintf(entrypoint_ip, IP_FORMAT, ip_count++) < 0) {
+    if (sprintf(entrypoint_ip, IP_FORMAT, ip_count_2, ip_count_3, ip_count_4++) < 0) {
         printf("Error formatting ip\n");
         exit(0);
     }
-    if (sprintf(container_ip, IP_FORMAT, ip_count++) < 0) {
+    if (sprintf(container_ip, IP_FORMAT, ip_count_2, ip_count_3, ip_count_4) < 0) {
         printf("Error formatting ip\n");
         exit(0);
     }
+    increment_ips();
     if (sprintf(container_namespace_name, CONTAINER_NAMESPACE_FORMAT, container_namespace_count++) < 0) {
         printf("Error formatting container namespace\n");
         exit(0);
@@ -38,7 +53,7 @@ void create_new_application() {
     isolate_container(entrypoint_ip, container_ip, container_namespace_name, entrypoint_veth_name, container_veth_name);
 }
 
-void run_primary_application() {
-    create_new_application();
-    create_new_application();
+void run_entrypoint() {
+    create_new_container();
+    create_new_container();
 }

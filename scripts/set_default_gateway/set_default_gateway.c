@@ -12,6 +12,7 @@ void set_container_default_network_gateway(char * container_namespace_name, char
         printf("Error formatting set_network_gateway command\n");
         exit(0);
     }
+    printf("cmd: %s\n", command);
     if (system(command) == -1) {
         printf("Error while running set_network_gateway command\n");
         exit(0);

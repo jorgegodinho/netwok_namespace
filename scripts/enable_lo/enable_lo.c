@@ -12,6 +12,7 @@ void enable_lo(char *container_namespace_name) {
         printf("Error formatting enable_lo command\n");
         exit(0);
     }
+    printf("cmd: %s\n", command);
     if (system(command) == -1) {
         printf("Error while running enable_lo command\n");
         exit(0);

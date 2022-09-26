@@ -12,6 +12,7 @@ void create_namespace(char *container_namespace_name) {
         printf("Error formatting create_namespace command\n");
         exit(0);
     }
+    printf("cmd: %s\n", command);
     if (system(command) == -1) {
         printf("Error while running create_namespace command\n");
         exit(0);

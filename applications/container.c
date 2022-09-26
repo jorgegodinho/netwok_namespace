@@ -17,7 +17,6 @@ void start_isolation(char *container_namespace_name, char *entrypoint_veth_name,
 }
 
 void isolate(char *container_namespace_name) {
-    unshare_thread();
     set_namespace(container_namespace_name);
 }
 
@@ -27,6 +26,7 @@ void isolate_container(char *entrypoint_ip, char *container_ip, char *container_
     // container process
     if (fork() == 0) {
         isolate(container_namespace_name);
+        run_java_server();
         exit(0);
     }
 }
