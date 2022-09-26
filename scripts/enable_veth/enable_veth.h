@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void child_enable_veth(char *child_namespace_name, char *child_veth_name);
-void parent_enable_veth(char *parent_veth_name);
+void container_enable_veth(char *container_namespace_name, char *container_veth_name);
+void entrypoint_enable_veth(char *entrypoint_veth_name);
 
 #endif //NETWORK_NAMESPACES_ENABLE_VETH_H

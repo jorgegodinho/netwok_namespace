@@ -8,6 +8,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void create_veth(char *parent_veth_name, char *child_veth_name);
+void create_veth(char *entrypoint_veth_name, char *container_veth_name);
 
 #endif //NETWORK_NAMESPACES_CREATE_VETH_H

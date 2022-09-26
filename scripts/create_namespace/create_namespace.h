@@ -8,6 +8,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void create_namespace(char *child_namespace_name);
+void create_namespace(char *container_namespace_name);
 
 #endif //NETWORK_NAMESPACES_CREATE_NAMESPACE_H

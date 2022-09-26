@@ -6,9 +6,9 @@
 
 static const char LINK_VETH[] = "ip link set %s netns %s";
 
-void link_veth(char *child_veth_name, char *child_namespace_name) {
+void link_veth(char *container_veth_name, char *container_namespace_name) {
     char command[256];
-    if (sprintf(command, LINK_VETH, child_veth_name, child_namespace_name) < 0) {
+    if (sprintf(command, LINK_VETH, container_veth_name, container_namespace_name) < 0) {
         printf("Error formatting link_veth command\n");
         exit(0);
     }

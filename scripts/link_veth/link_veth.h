@@ -8,6 +8,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void link_veth(char *child_veth_name, char *child_namespace_name);
+void link_veth(char *container_veth_name, char *container_namespace_name);
 
 #endif //NETWORK_NAMESPACES_LINK_VETH_H

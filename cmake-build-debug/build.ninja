@@ -55,24 +55,6 @@ build CMakeFiles/network_namespaces.dir/main.c.o: C_COMPILER__network_namespaces
   OBJECT_DIR = CMakeFiles/network_namespaces.dir
   OBJECT_FILE_DIR = CMakeFiles/network_namespaces.dir
 
-build CMakeFiles/network_namespaces.dir/threads/threads.c.o: C_COMPILER__network_namespaces_Debug /home/jgodinho/CLionProjects/network_namespaces/threads/threads.c || cmake_object_order_depends_target_network_namespaces
-  DEP_FILE = CMakeFiles/network_namespaces.dir/threads/threads.c.o.d
-  FLAGS = -g -std=gnu99
-  OBJECT_DIR = CMakeFiles/network_namespaces.dir
-  OBJECT_FILE_DIR = CMakeFiles/network_namespaces.dir/threads
-
-build CMakeFiles/network_namespaces.dir/server/server.c.o: C_COMPILER__network_namespaces_Debug /home/jgodinho/CLionProjects/network_namespaces/server/server.c || cmake_object_order_depends_target_network_namespaces
-  DEP_FILE = CMakeFiles/network_namespaces.dir/server/server.c.o.d
-  FLAGS = -g -std=gnu99
-  OBJECT_DIR = CMakeFiles/network_namespaces.dir
-  OBJECT_FILE_DIR = CMakeFiles/network_namespaces.dir/server
-
-build CMakeFiles/network_namespaces.dir/socket/socket.c.o: C_COMPILER__network_namespaces_Debug /home/jgodinho/CLionProjects/network_namespaces/socket/socket.c || cmake_object_order_depends_target_network_namespaces
-  DEP_FILE = CMakeFiles/network_namespaces.dir/socket/socket.c.o.d
-  FLAGS = -g -std=gnu99
-  OBJECT_DIR = CMakeFiles/network_namespaces.dir
-  OBJECT_FILE_DIR = CMakeFiles/network_namespaces.dir/socket
-
 build CMakeFiles/network_namespaces.dir/scripts/create_namespace/create_namespace.c.o: C_COMPILER__network_namespaces_Debug /home/jgodinho/CLionProjects/network_namespaces/scripts/create_namespace/create_namespace.c || cmake_object_order_depends_target_network_namespaces
   DEP_FILE = CMakeFiles/network_namespaces.dir/scripts/create_namespace/create_namespace.c.o.d
   FLAGS = -g -std=gnu99
@@ -97,8 +79,8 @@ build CMakeFiles/network_namespaces.dir/scripts/link_veth/link_veth.c.o: C_COMPI
   OBJECT_DIR = CMakeFiles/network_namespaces.dir
   OBJECT_FILE_DIR = CMakeFiles/network_namespaces.dir/scripts/link_veth
 
-build CMakeFiles/network_namespaces.dir/scripts/assign_ip/assign_ip.c.o: C_COMPILER__network_namespaces_Debug /home/jgodinho/CLionProjects/network_namespaces/scripts/assign_ip/assign_ip.c || cmake_object_order_depends_target_network_namespaces
-  DEP_FILE = CMakeFiles/network_namespaces.dir/scripts/assign_ip/assign_ip.c.o.d
+build CMakeFiles/network_namespaces.dir/scripts/assign_ip/add_address.c.o: C_COMPILER__network_namespaces_Debug /home/jgodinho/CLionProjects/network_namespaces/scripts/assign_ip/add_address.c || cmake_object_order_depends_target_network_namespaces
+  DEP_FILE = CMakeFiles/network_namespaces.dir/scripts/assign_ip/add_address.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/network_namespaces.dir
   OBJECT_FILE_DIR = CMakeFiles/network_namespaces.dir/scripts/assign_ip
@@ -121,23 +103,29 @@ build CMakeFiles/network_namespaces.dir/scripts/set_namespace/set_namespace.c.o:
   OBJECT_DIR = CMakeFiles/network_namespaces.dir
   OBJECT_FILE_DIR = CMakeFiles/network_namespaces.dir/scripts/set_namespace
 
-build CMakeFiles/network_namespaces.dir/applications/main_application.c.o: C_COMPILER__network_namespaces_Debug /home/jgodinho/CLionProjects/network_namespaces/applications/main_application.c || cmake_object_order_depends_target_network_namespaces
-  DEP_FILE = CMakeFiles/network_namespaces.dir/applications/main_application.c.o.d
+build CMakeFiles/network_namespaces.dir/applications/entrypoint.c.o: C_COMPILER__network_namespaces_Debug /home/jgodinho/CLionProjects/network_namespaces/applications/entrypoint.c || cmake_object_order_depends_target_network_namespaces
+  DEP_FILE = CMakeFiles/network_namespaces.dir/applications/entrypoint.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/network_namespaces.dir
   OBJECT_FILE_DIR = CMakeFiles/network_namespaces.dir/applications
 
-build CMakeFiles/network_namespaces.dir/applications/application.c.o: C_COMPILER__network_namespaces_Debug /home/jgodinho/CLionProjects/network_namespaces/applications/application.c || cmake_object_order_depends_target_network_namespaces
-  DEP_FILE = CMakeFiles/network_namespaces.dir/applications/application.c.o.d
+build CMakeFiles/network_namespaces.dir/applications/container.c.o: C_COMPILER__network_namespaces_Debug /home/jgodinho/CLionProjects/network_namespaces/applications/container.c || cmake_object_order_depends_target_network_namespaces
+  DEP_FILE = CMakeFiles/network_namespaces.dir/applications/container.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/network_namespaces.dir
   OBJECT_FILE_DIR = CMakeFiles/network_namespaces.dir/applications
 
-build CMakeFiles/network_namespaces.dir/client/client.c.o: C_COMPILER__network_namespaces_Debug /home/jgodinho/CLionProjects/network_namespaces/client/client.c || cmake_object_order_depends_target_network_namespaces
-  DEP_FILE = CMakeFiles/network_namespaces.dir/client/client.c.o.d
+build CMakeFiles/network_namespaces.dir/scripts/open_port/open_port.c.o: C_COMPILER__network_namespaces_Debug /home/jgodinho/CLionProjects/network_namespaces/scripts/open_port/open_port.c || cmake_object_order_depends_target_network_namespaces
+  DEP_FILE = CMakeFiles/network_namespaces.dir/scripts/open_port/open_port.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/network_namespaces.dir
-  OBJECT_FILE_DIR = CMakeFiles/network_namespaces.dir/client
+  OBJECT_FILE_DIR = CMakeFiles/network_namespaces.dir/scripts/open_port
+
+build CMakeFiles/network_namespaces.dir/scripts/set_default_gateway/set_default_gateway.c.o: C_COMPILER__network_namespaces_Debug /home/jgodinho/CLionProjects/network_namespaces/scripts/set_default_gateway/set_default_gateway.c || cmake_object_order_depends_target_network_namespaces
+  DEP_FILE = CMakeFiles/network_namespaces.dir/scripts/set_default_gateway/set_default_gateway.c.o.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles/network_namespaces.dir
+  OBJECT_FILE_DIR = CMakeFiles/network_namespaces.dir/scripts/set_default_gateway
 
 
 # =============================================================================
@@ -147,7 +135,7 @@ build CMakeFiles/network_namespaces.dir/client/client.c.o: C_COMPILER__network_n
 #############################################
 # Link the executable network_namespaces
 
-build network_namespaces: C_EXECUTABLE_LINKER__network_namespaces_Debug CMakeFiles/network_namespaces.dir/main.c.o CMakeFiles/network_namespaces.dir/threads/threads.c.o CMakeFiles/network_namespaces.dir/server/server.c.o CMakeFiles/network_namespaces.dir/socket/socket.c.o CMakeFiles/network_namespaces.dir/scripts/create_namespace/create_namespace.c.o CMakeFiles/network_namespaces.dir/scripts/enable_lo/enable_lo.c.o CMakeFiles/network_namespaces.dir/scripts/create_veth/create_veth.c.o CMakeFiles/network_namespaces.dir/scripts/link_veth/link_veth.c.o CMakeFiles/network_namespaces.dir/scripts/assign_ip/assign_ip.c.o CMakeFiles/network_namespaces.dir/scripts/enable_veth/enable_veth.c.o CMakeFiles/network_namespaces.dir/scripts/unshare/unshare.c.o CMakeFiles/network_namespaces.dir/scripts/set_namespace/set_namespace.c.o CMakeFiles/network_namespaces.dir/applications/main_application.c.o CMakeFiles/network_namespaces.dir/applications/application.c.o CMakeFiles/network_namespaces.dir/client/client.c.o
+build network_namespaces: C_EXECUTABLE_LINKER__network_namespaces_Debug CMakeFiles/network_namespaces.dir/main.c.o CMakeFiles/network_namespaces.dir/scripts/create_namespace/create_namespace.c.o CMakeFiles/network_namespaces.dir/scripts/enable_lo/enable_lo.c.o CMakeFiles/network_namespaces.dir/scripts/create_veth/create_veth.c.o CMakeFiles/network_namespaces.dir/scripts/link_veth/link_veth.c.o CMakeFiles/network_namespaces.dir/scripts/assign_ip/add_address.c.o CMakeFiles/network_namespaces.dir/scripts/enable_veth/enable_veth.c.o CMakeFiles/network_namespaces.dir/scripts/unshare/unshare.c.o CMakeFiles/network_namespaces.dir/scripts/set_namespace/set_namespace.c.o CMakeFiles/network_namespaces.dir/applications/entrypoint.c.o CMakeFiles/network_namespaces.dir/applications/container.c.o CMakeFiles/network_namespaces.dir/scripts/open_port/open_port.c.o CMakeFiles/network_namespaces.dir/scripts/set_default_gateway/set_default_gateway.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/network_namespaces.dir
   POST_BUILD = :

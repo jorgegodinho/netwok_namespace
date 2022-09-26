@@ -8,6 +8,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void enable_lo(char *child_namespace_name);
+void enable_lo(char *container_namespace_name);
 
 #endif //NETWORK_NAMESPACES_ENABLE_LO_H

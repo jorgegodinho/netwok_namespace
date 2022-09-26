@@ -11,5 +11,4 @@ void unshare_thread() {
         printf("Error while running unshare command\n");
         exit(0);
     }
-    printf("ola\n");
 }

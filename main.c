@@ -1,8 +1,6 @@
-#define _GNU_SOURCE
-#include <stdio.h>
-#include "applications/main_application.h"
+#include "applications/entrypoint.h"
 
 int main() {
-    run_primary_application(8080);
+    run_primary_application();
     return 0;
 }

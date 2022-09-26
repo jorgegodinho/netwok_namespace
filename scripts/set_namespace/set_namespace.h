@@ -13,6 +13,6 @@
 #include <sched.h>
 #include <stdlib.h>
 
-void set_namespace(char *child_namespace_name);
+void set_namespace(char *container_namespace_name);
 
 #endif //NETWORK_NAMESPACES_SET_NAMESPACE_H
