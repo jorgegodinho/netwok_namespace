@@ -16,6 +16,7 @@ void add_address_to_entrypoint_namespace(
         printf("Error formatting add_address_to_entrypoint_namespace command\n");
         exit(0);
     }
+    printf("cmd: %s\n", command);
     if (system(command) == -1) {
         printf("Error while running add_address_to_entrypoint_namespace command\n");
         exit(0);
